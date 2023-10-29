@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ati-4</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-secondary-subtle">
+
+
+    <!--Logo do site-->
+    <div class="row">
+        <div class="col-sm-12">
+
+            <p class="border border-dark p-2">LOGO</p>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Header do site com apresentação-->
+    <div class="container-sm">
+
+
+        <div class="row text-center">
+
+            <div class="col-sm-6">
+
+                <div class="col-sm-9 text-start float-sm-end ">
+
+                    <div class="border border-dark ps-3">
+
+                        <p class="fs-1 pt-5"> <strong>Sinta o conforto acolhedor de nossas hospedagens</strong> </p>
+                        <p class="fs-3 ">Hospede-se nos nossos hotéis com quartos a partir de R$ 100,00.</p>
+
+                        <p>
+
+                            <button type="button" class="btn btn-secondary border border-dark">Saiba Mais</button>
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-6">
+
+
+                <img class="img-fluid float-start" src="Imagens/Imagem_Apresentacao.jpg" alt="Imagens"
+                    style="width: 500px;">
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <!--Content do site com o motivo de se hospedar nele-->
+    <div class="container-sm">
+
+
+
+
+        <div class="row">
+
+
+            <div class="col-sm-12 mt-5">
+
+                <p class="fs-3 text-center"><strong>POR QUE SE HOSPEDAR EM NOSSOS HOTÉIS?</strong></p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row mt-5">
+
+            <div class="col-sm-12">
+
+                <div class="row">
+
+
+                    <div class="col-sm-6">
+
+
+                        <div class="col-sm-4 float-sm-end offset-1">
+
+                            <img class="float-start img-fluid" src="Imagens/Cafe.webp" alt="Imagens"
+                                style="max-width: 40px;">
+
+                            <p class="fs-7 ps-5"> <strong>Delicioso café da manhã</strong></p>
+
+                            <p class="fs-8 ps-5">Incluso em todas as diárias</p>
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <div class="col-sm-4 offset-1">
+
+                            <img class="float-start img-fluid " src="Imagens/Gps (2).png" alt="Imagens"
+                                style="max-width: 40px;">
+
+                            <p class="fs-7 ps-5"> <strong>Fácil acesso</strong></p>
+
+                            <p class="fs-8 ps-5">Perto dos principais pontos turísticos</p>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!--Footer do site com formulario e imagems-->
+    <div class="container-sm">
+
+
+        <!--Imagens Das suites-->
+        <div class="row">
+
+            <div class="col-sm-8 offset-2 border border-dark mt-3 text-center">
+
+                <div class="row">
+
+
+
+                    <div class="col-sm-4">
+
+                        <img src="Imagens/suiteSulte.jpg" alt="Imagens" class="p-3 img-fluid" />
+                        <p class="pt-2 text-center">Suíte Solteiro</p>
+
+                    </div>
+
+
+                    <div class="col-sm-4">
+
+                        <img src="Imagens/SuiteCasal.jpg" alt="Imagens" class="p-3 img-fluid" />
+                        <p class="pt-2 text-center">Suíte Casal</p>
+
+                    </div>
+
+
+                    <div class="col-sm-4">
+
+                        <img src="Imagens/SuiteMaster.jpg" alt="Imagens" class="p-3 img-fluid" />
+                        <p class=" pt-2 text-center">Suíte Master</p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--Formulario-->
+        <div class="container-sm mt-5">
+
+
+            <div class="row">
+
+
+                <div class="col-sm-12 border border-dark ">
+
+
+
+                    <div class="col-sm-3 float-sm-start">
+
+
+                        <p> <strong> FAÇA SUA RESERVA </strong> </p>
+
+
+                        <p>
+
+                            Entre em contato conosco informando as datas desejadas.
+                            Lhe retornaremos informando a disponibilidade e repassando
+                            detalhes da reserva.
+                        </p>
+
+
+
+                    </div>
+
+                    <form method="POST" action="http://localhost:3000/FacaReserva">
+
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
+
+
+                                <div class="col-sm-4 float-sm-start ">
+
+                                    <div>
+
+                                        <label for="txtNome" class="form-label">Nome</label>
+                                        <input id="txtNome" class="form-control" type="text" name="txtNome">
+
+                                    </div>
+
+
+
+
+                                    <div>
+
+                                        <label for="dateDataEntrada" class="form-label">Data de entrada</label>
+                                        <input id="dateDataEntrada" class="form-control" type="date" name="data">
+
+                                    </div>
+
+
+
+                                    <div>
+
+                                        <label for="textAreObs" class="form-label">Observações</label>
+                                        <textarea name="textAreObs" class="form-control" id="textAreObs" cols="25"
+                                            rows="5"></textarea>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-5 float-sm-start ms-3">
+
+                                    <div>
+
+                                        <label for="emailEmail" class="form-label">E-mail</label>
+                                        <input name="emailEmail" class="form-control" id="emailEmail" type="email">
+
+                                    </div>
+
+
+
+                                    <div>
+
+                                        <label for="dateDataSaida" class="form-label">Data de saida</label>
+                                        <input name="dateDataSaida" class="form-control" id="dateDataSaida" type="date">
+
+                                    </div>
+
+
+                                    <div class="col-sm-12">
+
+                                        <div class="row">
+
+                                            <div class="col-sm-3">
+
+                                                <label for="numberAdultos" class="form-label">Adultos</label>
+                                                <input name="numberAdultos" class="form-control" id="numberAdultos"
+                                                    type="number" style="width: 80px;">
+
+
+                                            </div>
+
+
+                                            <div class="col-sm-6">
+
+
+                                                <label for="numberCriancas" class="form-label">Criancas</label>
+                                                <input name="numberCriancas" class="form-control" id="numberCriancas"
+                                                    type="number" style="width: 80px;">
+
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12">
+
+                                            <button type="submit" class="btn btn-secondary mt-3 ms-3"
+                                                style="width: 160px;">Enviar</button>
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </form>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
